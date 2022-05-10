@@ -1,0 +1,210 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+/* Start Global Rules */
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* start global rooles */
+  
+  :root {
+    --maincolor: hsl(228, 45%, 44%);
+    --Bright-blue :  hsl(245, 75%, 52%);
+    --Very-white: hsl(225, 100%, 98%);
+    --hovercolor: hsl(224, 23%, 55%);
+    --dark-blue : hsl(223, 47%, 23%);
+    --bgcolor: #e0e8ff;
+    --border-radius: 20px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: var(--bgcolor);
+    background-size: 100% 50%;
+    background-image: url(../images/pattern-background-desktop.svg);
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Smole */
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  /* Mediume */
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  /* Large */
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
+  /* End Global Rules */
+
+  /* start card style */
+  .conatiner {
+    border-radius: var(--border-radius) , 20px;
+    box-shadow: 0 10px 25px 0px rgb(0 0 0 / 10%)  ;
+    -webkit-border-radius: var(--border-radius) , 20px;
+    -moz-border-radius: var(--border-radius) , 20px;
+    -ms-border-radius: var(--border-radius) , 20px;
+    -o-border-radius: var(--border-radius) , 20px;
+}
+.conatiner > img {
+    width: 100%;
+    max-width: 350px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    display: block;
+}
+.conatiner .cards-boody {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    padding: 2em 1.5em;
+    gap: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+
+
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f7f4f4;
+    margin-bottom: 0.75em;
+    border-radius: calc(var(--border-radius) - 5px);
+    padding: 10px 15px;
+    -webkit-border-radius: calc(var(--border-radius) - 5px);
+    -moz-border-radius: calc(var(--border-radius) - 5px);
+    -ms-border-radius: calc(var(--border-radius) - 5px);
+    -o-border-radius: calc(var(--border-radius) - 5px);
+}
+
+.card-body .card-price {
+    display: flex;
+    align-items: center;
+}
+
+.card-body .card-price .icon-card {
+    margin-right: 20px;
+}
+.card-title h2 {
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+.card-title p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6;
+}
+.card-price .text-card h3 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.card-price .text-card p {
+    font-weight: 500;
+    color: #777;
+}
+.card-link a {
+    color: var(--Bright-blue);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.card-btn {
+    padding: 0.75em 1em;
+    background-color: var(--Bright-blue);
+    box-shadow: 0em 1em 1.3em rgb(0 0 0 / 20%);
+    transition: 0.4s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.card-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-cancel {
+    margin-top: 5px;
+}
+.card-cancel a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.card-link a:hover {
+    text-decoration: none;
+    color: var(--hovercolor);
+}
+
+.card-btn:hover  {
+    background-color: var(--hovercolor);
+}
+
+.card-cancel a:hover {
+    color: #000;
+}
+  /* end card style */
