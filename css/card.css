@@ -14,12 +14,11 @@
 /* start global rooles */
 
 :root {
-  --maincolor: hsl(228, 45%, 44%);
+  --Pale-blue: hsl(225, 100%, 94%);
   --Bright-blue: hsl(245, 75%, 52%);
-  --Very-white: hsl(225, 100%, 98%);
-  --hovercolor: hsl(224, 23%, 55%);
-  --dark-blue: hsl(223, 47%, 23%);
-  --bgcolor: #e0e8ff;
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
   --border-radius: 20px;
 }
 
@@ -35,45 +34,10 @@ body {
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-color: var(--bgcolor);
-  background-size: 100% 50%;
+  background-color: var(--Pale-blue);
+  background-size: contain;
   background-image: url(../images/pattern-background-desktop.svg);
   font-family: "Red Hat Display", sans-serif;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Smole */
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-/* Mediume */
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-/* Large */
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 }
 
 /* End Global Rules */
@@ -95,8 +59,7 @@ ul {
   -o-border-radius: var(--border-radius);
 }
 .conatiner > img {
-  width: 100%;
-  max-width: 350px;
+  width: 400px;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
   display: block;
@@ -108,9 +71,9 @@ ul {
   flex-direction: column;
   background: #fff;
   text-align: center;
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
-  padding: 2em 1.5em;
+  padding: 2.3em;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
@@ -118,13 +81,15 @@ ul {
 .card-title h2 {
   font-weight: 900;
   margin-bottom: 1em;
-  font-size: 22px;
+  color: var(--Dark-blue);
+  font-size: 25px;
 }
 
 .card-title p {
-  font-size: 15px;
-  color: #777;
+  font-size: 16px;
+  color: var(--Desaturated-blue);
   line-height: 1.6;
+  font-weight: 500;
 }
 
 /* card body */
@@ -133,9 +98,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f7f4f4;
+  background-color: var(--Very-pale-blue);
   border-radius: calc(var(--border-radius) - 5px);
-  padding: 10px 15px;
+  padding: 20px;
   -webkit-border-radius: calc(var(--border-radius) - 5px);
   -moz-border-radius: calc(var(--border-radius) - 5px);
   -ms-border-radius: calc(var(--border-radius) - 5px);
@@ -155,14 +120,16 @@ ul {
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 17px;
+  color: var(--Dark-blue);
 }
 .card-price .text-card p {
   font-weight: 500;
-  color: #777;
+  color: var(--Desaturated-blue);
+  font-size: 15px;
 }
 .card-link a {
   color: var(--Bright-blue);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -172,9 +139,9 @@ ul {
 }
 
 .card-btn {
-  padding: 0.75em 1em;
+  padding: 0.85em 1em;
   background-color: var(--Bright-blue);
-  box-shadow: 0em 1em 1.3em rgb(0 0 0 / 20%);
+  box-shadow: 0em 1em 1.3em rgb(0 0 0 / 18%);
   transition: 0.4s;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -188,16 +155,17 @@ ul {
 }
 .card-btn a {
   text-decoration: none;
-  color: #fff;
+  color: var(--Very-pale-blue);
+  font-weight: 600;
 }
 
 .card-cancel {
   margin-top: 5px;
 }
-.card-cancel a {
+.card-cancel > a {
   text-decoration: none;
-  color: #777;
-  font-weight: 900;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
   font-size: 15px;
   transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -206,7 +174,7 @@ ul {
   -o-transition: 0.4s;
 }
 
-/* attribution */
+/* attribution
 .attribution {
   margin-top: 30px;
   font-size: 15px;
@@ -233,7 +201,7 @@ ul {
 }
 .attribution a:hover {
   color: var(--hovercolor);
-}
+} */
 
 /* grouping */
 .card-title,
@@ -246,15 +214,28 @@ ul {
 
 .card-link a:hover {
   text-decoration: none;
-  color: var(--hovercolor);
+  color: var(--Desaturated-blue);
 }
 
 .card-btn:hover {
-  background-color: var(--hovercolor);
+  background-color: var(--Desaturated-blue);
 }
 
 .card-cancel a:hover {
-  color: #222;
+  color: var(--Dark-blue);
 }
 
 /* end card style */
+
+/* media query */
+@media (max-width: 767px) {
+  .conatiner > img , .card-head {
+    width: 350px !important;
+  }
+  .card-title {
+    padding-inline: 10px;
+  }
+  .card-head {
+    padding: 1.7em 2em !important;
+  }
+}
