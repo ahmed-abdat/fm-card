@@ -59,7 +59,7 @@ body {
   -o-border-radius: var(--border-radius);
 }
 .conatiner > img {
-  width: 400px;
+  width: 450px;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
   display: block;
@@ -71,9 +71,9 @@ body {
   flex-direction: column;
   background: #fff;
   text-align: center;
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
-  padding: 2.3em;
+  padding: 2.3em 3em;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
@@ -207,7 +207,7 @@ body {
 .card-title,
 .card-body,
 .card-btn {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 /* hover state */
@@ -227,7 +227,7 @@ body {
 
 /* end card style */
 
-/* media query */
+/* media query  smaul*/
 @media (max-width: 767px) {
   .conatiner > img , .card-head {
     width: 350px !important;
@@ -238,4 +238,16 @@ body {
   .card-head {
     padding: 1.7em 2em !important;
   }
+}
+
+/* media query meduim */
+@media (max-width: 992px) {
+  .conatiner > img , .card-head {
+    width: 400px !important;
+  }
+  .card-title,
+.card-body,
+.card-btn {
+  margin-bottom: 20px;
+}
 }
