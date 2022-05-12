@@ -210,7 +210,10 @@ body {
   -o-transition: 0.4s;
 }
 
-/* attribution
+/* attribution */
+
+
+
 .attribution {
   margin-top: 30px;
   font-size: 15px;
@@ -227,6 +230,13 @@ body {
   -o-transition: 0.4s;
 }
 
+@media (min-width: 1200px) {
+  .attribution {
+    display: none !important;
+  }
+}
+
+
 @media (max-width: 767px) {
   .attribution {
     flex-direction: column;
@@ -236,8 +246,8 @@ body {
   }
 }
 .attribution a:hover {
-  color: var(--hovercolor);
-} */
+  color: var(--Dark-blue);
+}
 
 
 .card-title {
