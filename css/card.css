@@ -52,14 +52,15 @@ body {
 
 .conatiner {
   border-radius: var(--border-radius);
-  box-shadow: 0 15px 14px 2px rgb(0 0 0 / 10%);
+  width: 450px;
+  box-shadow: 0 10px 15px 5px rgb(0 0 0 / 5%);
   -webkit-border-radius: var(--border-radius);
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
 }
 .conatiner > img {
-  width: 450px;
+  max-width: 100%;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
   display: block;
@@ -71,18 +72,16 @@ body {
   flex-direction: column;
   background: #fff;
   text-align: center;
-  max-width: 450px;
-  width: 100%;
-  padding: 2.3em 3em;
+  padding: 2.5em 3em;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 }
 
 .card-title h2 {
   font-weight: 900;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   color: var(--Dark-blue);
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .card-title p {
@@ -100,7 +99,7 @@ body {
   justify-content: space-between;
   background-color: var(--Very-pale-blue);
   border-radius: calc(var(--border-radius) - 5px);
-  padding: 20px;
+  padding: 25px 20px;
   -webkit-border-radius: calc(var(--border-radius) - 5px);
   -moz-border-radius: calc(var(--border-radius) - 5px);
   -ms-border-radius: calc(var(--border-radius) - 5px);
@@ -118,7 +117,7 @@ body {
 
 .card-price .text-card h3 {
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 17px;
   color: var(--Dark-blue);
 }
@@ -139,7 +138,7 @@ body {
 }
 
 .card-btn {
-  padding: 0.85em 1em;
+  padding: 0.95em 1em;
   background-color: var(--Bright-blue);
   box-shadow: 0em 1em 1.3em rgb(0 0 0 / 18%);
   transition: 0.4s;
@@ -157,11 +156,10 @@ body {
   text-decoration: none;
   color: var(--Very-pale-blue);
   font-weight: 600;
+  font-size: 14px;
 }
 
-.card-cancel {
-  margin-top: 5px;
-}
+
 .card-cancel > a {
   text-decoration: none;
   color: var(--Desaturated-blue);
@@ -228,26 +226,3 @@ body {
 /* end card style */
 
 /* media query  smaul*/
-@media (max-width: 767px) {
-  .conatiner > img , .card-head {
-    width: 350px !important;
-  }
-  .card-title {
-    padding-inline: 10px;
-  }
-  .card-head {
-    padding: 1.7em 2em !important;
-  }
-}
-
-/* media query meduim */
-@media (max-width: 992px) {
-  .conatiner > img , .card-head {
-    width: 400px !important;
-  }
-  .card-title,
-.card-body,
-.card-btn {
-  margin-bottom: 20px;
-}
-}
