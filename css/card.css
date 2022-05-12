@@ -216,8 +216,9 @@ body {
 
 .attribution {
   margin-top: 30px;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
+  font-weight: 600;
 }
 .attribution a {
   text-decoration: none;
