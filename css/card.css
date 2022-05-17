@@ -93,7 +93,7 @@ body {
   }
 }
 
-.card-title h2 {
+.card-title h1 {
   font-weight: 900;
   margin-bottom: 1em;
   color: var(--Dark-blue);
@@ -101,7 +101,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .card-title h2 {
+  .card-title h1 {
     margin-bottom: 0.5rem;
   }
 }
@@ -115,7 +115,7 @@ body {
 
 @media (max-width: 1200px) {
   p,
-  h3 {
+  h2 {
     font-size: 1em !important;
   }
 }
@@ -149,7 +149,7 @@ body {
   margin-right: 1.25em;
 }
 
-.card-price .text-card h3 {
+.card-price .text-card h2 {
   margin-bottom: 0.65em;
   font-weight: 900;
   font-size: 1.055em;
